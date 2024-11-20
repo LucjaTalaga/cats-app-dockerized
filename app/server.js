@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
   });
 
+//mongo client options and credentials
+let mongoUrl = "mongodb://admin:pass@mongodb";
+let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
+
 
 
 
